@@ -38,6 +38,7 @@ function validate(){
     }
 }
 
+//logout
 function logout(){
   navbar.style.display = "none";
   loginform.style.display = "block";
