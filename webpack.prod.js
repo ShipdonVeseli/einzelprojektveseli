@@ -29,6 +29,10 @@ module.exports = {
     new HtmlWebpackPlugin({  
       title: "Basic Webpack Setup",
       template: path.resolve(__dirname, './src/index.html'),
+    }),
+    new HtmlWebpackPlugin({  
+      filename: 'about.html',
+      template: path.resolve('/src/about.html'),
     })
   ]
 };
