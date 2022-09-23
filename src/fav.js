@@ -46,7 +46,7 @@ function createFavTable(){
         }
         for(let k=0; k<limiter; k++){
             let cell1 = row.insertCell(0);
-            cell1.innerHTML = "<img src='"+dogbreedlistpictures[favbreeds[counter]]+"' width='200' height='200' role='button' id='"+favbreeds[counter]+"' onclick='remFromFav("+favbreeds[counter]+")'>";
+            cell1.innerHTML = "<img src='"+dogbreedlistpictures[favbreeds[counter]]+"' width='200' height='200' title='"+dogbreedlist[favbreeds[counter]]+"' role='button' id='"+favbreeds[counter]+"' onclick='remFromFav("+favbreeds[counter]+")'>";
             counter++;
         }
     }
