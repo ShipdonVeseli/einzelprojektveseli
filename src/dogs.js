@@ -2,14 +2,7 @@ import 'bootstrap';
 import './style_custom.scss';
 
 function addToFav(id){
-  //console.log(id);
-  // if(sessionStorage.getItem("favorite") == null){
-  //   var arrayinit = [id]
-  //   sessionStorage.setItem("favorite", JSON.stringify(arrayinit))  
-  // }
-  // else{
-  //   console.log(JSON.parse(sessionStorage.getItem("favorite")).push(id))
-  // }
+  alert(dogbreedlist[id]+" added to Favourite");
   sessionStorage.setItem(id,id);
 }
 window.addToFav = addToFav;
@@ -95,7 +88,7 @@ function createTable(){
     let row = dogtable.insertRow(0);
     for(let k=0; k<4; k++){
       let cell1 = row.insertCell(0);
-      cell1.innerHTML = "<div class='container'><img src='"+dogbreedlistpictures[counter]+"' width='200' height='200' class='image' role='button' id='"+counter+"' title='"+dogbreedlist[counter]+"'onclick='addToFav("+counter+")'><div class='overlay'><div class='text'>"+dogbreedlist[counter]+"</div></div></div>";
+      cell1.innerHTML = "<div class='container' onclick='addToFav("+counter+")'><img src='"+dogbreedlistpictures[counter]+"' width='200' height='200' class='image' role='button' id='"+counter+"' title='"+dogbreedlist[counter]+"'onclick='addToFav("+counter+")'><div class='overlay'><div class='text'>"+dogbreedlist[counter]+"</div></div></div>";
       counter++;
     }
   }
