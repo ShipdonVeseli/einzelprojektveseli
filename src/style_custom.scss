@@ -33,12 +33,12 @@ ul {
   }
   .container {
     position: relative;
-    width: 100%;
+    width: 90%;
   }
 
   .image {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
@@ -53,8 +53,8 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
@@ -63,7 +63,12 @@ ul {
   .container:hover .overlay {
     opacity: 0.9;
   }
-
+  #login{
+    background-color: #008CBA;
+  }
+  #login:hover{
+    background-color: #0c627efd;
+  }
   #logout{
     background-color: #008CBA;
   }
