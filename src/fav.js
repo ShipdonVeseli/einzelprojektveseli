@@ -38,6 +38,18 @@ function createFavTable(){
     getAllFav();
     let favtable = document.getElementById("favtable");
     let counter = 0;
+    for(let j=0; j<favbreeds.length; j++){
+        let row = favtable.insertRow(0);
+        let cell1 = row.insertCell(0);
+        cell1.innerHTML = "<img src='"+dogbreedlistpictures[favbreeds[counter]]+"' width='200' height='200' title='"+dogbreedlist[favbreeds[counter]]+"' role='button' id='"+favbreeds[counter]+"' onclick='remFromFav("+favbreeds[counter]+")'>";
+        counter++;
+    }
+}
+
+/* function createFavTable(){
+    getAllFav();
+    let favtable = document.getElementById("favtable");
+    let counter = 0;
     for(let j=0; j<Math.ceil((favbreeds.length/3)); j++){
         let row = favtable.insertRow(0);
         let limiter = 3;
@@ -50,6 +62,6 @@ function createFavTable(){
             counter++;
         }
     }
-}
+} */
 
 
