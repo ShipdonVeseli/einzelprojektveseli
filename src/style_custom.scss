@@ -33,12 +33,12 @@ ul {
   }
   .container {
     position: relative;
-    width: 90%;
+    width: 80%;
   }
 
   .image {
     display: block;
-    width: 90%;
+    width: 85%;
     height: auto;
   }
 
@@ -53,7 +53,7 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 90%;
+    height: 100%;
     width: 90%;
     opacity: 0;
     transition: .5s ease;
